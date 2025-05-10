@@ -65,14 +65,14 @@
 	    scroll-layers = <SCROLL>;
 	    snipe-layers = <SNIPE>;
         arrows {
-            layers = <NAVI>;
+            layers = <NUM>;
             bindings =
                 <&kp RIGHT_ARROW>,
                 <&kp LEFT_ARROW>,
                 <&kp UP_ARROW>,
                 <&kp DOWN_ARROW>;
             /*   optional: ball action configuration  */
-            tick = <10>;
+            tick = <40>;
             wait-ms = <5>;
             tap-ms = <5>;
         };
