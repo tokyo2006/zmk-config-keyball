@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 #include "keyball44.dtsi"
+#include <dt-bindings/zmk/keys.h>
 #define QWERT  0
 #define NAVI   1
 #define NUM    2
@@ -75,7 +76,7 @@
             wait-ms = <5>;
             tap-ms = <5>;
         };
-        
+
         volume {
             layers = <MODIFY>;
             bindings =
