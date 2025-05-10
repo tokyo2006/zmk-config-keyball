@@ -12,6 +12,7 @@
 #define MOUSE  4
 #define SCROLL 5
 #define SNIPE  6
+#define WIN    7
 
 &default_transform {
     col-offset = <6>;
