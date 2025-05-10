@@ -3,8 +3,14 @@
  *
  * SPDX-License-Identifier: MIT
  */
- 
 #include "keyball44.dtsi"
+#define QWERT  0
+#define NAVI   1
+#define NUM    2
+#define MODIFY 3
+#define MOUSE  4
+#define SCROLL 5
+#define SNIPE  6
 
 &default_transform {
     col-offset = <6>;
@@ -54,9 +60,32 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 28 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-	automouse-layer = <4>;
-	scroll-layers = <5>;
-	snipe-layers = <6>;
+	    automouse-layer = <MOUSE>;
+	    scroll-layers = <SCROLL>;
+	    snipe-layers = <SNIPE>;
+        arrows {
+            layers = <NAVI>;
+            bindings =
+                <&kp RIGHT_ARROW>,
+                <&kp LEFT_ARROW>,
+                <&kp UP_ARROW>,
+                <&kp DOWN_ARROW>;
+            /*   optional: ball action configuration  */
+            tick = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
+        };
+        
+        volume {
+            layers = <MODIFY>;
+            bindings =
+                    <&none>,
+                    <&none>,
+                    <&kp C_VOLUME_UP>,
+                    <&kp C_VOLUME_DOWN>;
+            wait-ms = <5>;
+            tap-ms = <5>;
+        };
     };
 };
 
