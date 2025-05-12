@@ -67,11 +67,11 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 28 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-	    automouse-layer = <MOUSE,WINMOUSE>;
-	    scroll-layers = <SCROLL,WINSCROLL>;
-	    snipe-layers = <SNIPE,WINSNIPE>;
+	    automouse-layer = <MOUSE WINMOUSE>;
+	    scroll-layers = <SCROLL WINSCROLL>;
+	    snipe-layers = <SNIPE WINSNIPE>;
         arrows {
-            layers = <SYMBOL,WINSYMBOL>;
+            layers = <SYMBOL WINSYMBOL>;
             bindings =
                 <&kp RIGHT_ARROW>,
                 <&kp LEFT_ARROW>,
@@ -84,7 +84,7 @@
         };
 
         volume {
-            layers = <MODIFY,WINMODIFY>;
+            layers = <MODIFY WINMODIFY>;
             bindings =
                     <&none>,
                     <&none>,
