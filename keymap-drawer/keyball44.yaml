@@ -327,7 +327,7 @@ layers:
   - I
   - O
   - P
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '=', h: +, s: +}
   - {t: '$$mdi:apple-keyboard-caps$$', h: WINSCRO}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
