@@ -264,7 +264,7 @@
         WINMOUS {
             label = "WINMOUS";
             bindings = <
-&none   &trans  &trans  &trans  &trans  &trans  &trans         &trans     &trans     &trans     &trans  &none
+&none   &trans  &trans  &trans  &trans  &trans  &kp Y          &kp U      &kp I      &kp O      &kp P   &as PLUS EQUAL
 &none   &trans  &trans  &trans  &trans  &none   &kp PAGE_UP    &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &none
 &none   &none   &none   &none   &none   &none   &kp PAGE_DOWN  &none      &none      &none      &none   &none
 &trans  &trans  &trans  &trans  &trans          &trans         &trans                                   &none
