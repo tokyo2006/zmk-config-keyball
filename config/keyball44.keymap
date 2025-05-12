@@ -213,19 +213,19 @@
         WINSYM {
             label = "WINSYM";
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT           &kp CARET             &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &trans           &trans       &trans    &trans      &as MINUS UNDERSCORE  &as UNDERSCORE MINUS  &trans         &trans        &trans                &trans                 &trans
-&trans  &trans           &trans       &trans    &trans      &trans                &trans                &trans         &trans        &trans                &trans                 &trans
-&trans  &trans           &trans       &trans    &trans                            &trans                &trans                                                                    &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT           &kp CARET             &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &trans           &trans       &trans    &trans      &as MINUS UNDERSCORE  &as UNDERSCORE MINUS  &kp RIGHT_SHIFT  &trans        &trans                &trans                 &trans
+&trans  &trans           &trans       &trans    &trans      &trans                &trans                &trans           &trans        &trans                &trans                 &trans
+&trans  &trans           &trans       &trans    &trans                            &trans                &trans                                                                      &trans
             >;
         };
 
         WINMO {
             label = "WINMO";
             bindings = <
-&kp LG(Q)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans     &kp LG(A)     &kp LG(S)     &kp LG(D)     &kp LG(F)     &trans        &trans        &trans        &trans        &trans        &trans        &trans
-&trans     &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)     &trans        &trans        &kp F1        &kp F2        &kp F3        &kp F4        &trans
+&kp LC(Q)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&trans     &kp LC(A)     &kp LC(S)     &kp LC(D)     &kp LC(F)     &trans        &trans        &trans        &trans        &trans        &trans        &trans
+&trans     &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &trans        &trans        &kp F1        &kp F2        &kp F3        &kp F4        &trans
 &trans     &trans        &trans        &trans        &trans                      &trans        &mo 3                                                   &trans
             >;
         };
