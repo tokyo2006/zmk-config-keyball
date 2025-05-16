@@ -163,10 +163,10 @@
         MOUSE {
             label = "MOUSE";
             bindings = <
-&none   &trans  &trans  &trans  &trans  &trans  &kp Y          &kp U      &kp I      &kp O      &kp P           &as PLUS EQUAL
-&none   &trans  &trans  &trans  &trans  &none   &msc SCRL_UP   &mkp LCLK  &mkp MCLK  &mkp RCLK  &msc SCRL_DOWN  &none
-&none   &none   &none   &none   &none   &none   &kp PAGE_DOWN  &none      &none      &none      &none           &none
-&trans  &trans  &trans  &trans  &trans          &trans         &trans                                           &none
+&trans  &trans  &trans  &trans  &trans  &trans  &kp Y          &kp U      &kp I      &kp O      &kp P           &as PLUS EQUAL
+&trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_UP   &mkp LCLK  &mkp MCLK  &mkp RCLK  &msc SCRL_DOWN  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp PAGE_DOWN  &trans     &trans     &trans     &trans          &trans
+&trans  &trans  &trans  &trans  &trans          &trans         &trans                                           &trans
             >;
         };
 
