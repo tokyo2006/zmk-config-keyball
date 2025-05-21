@@ -97,7 +97,7 @@
         };
 
         right_brace {
-            bindings = <&kp RIGHT_PARENTHESIS>;
+            bindings = <&kp RIGHT_BRACE>;
             key-positions = <31 32>;
         };
 
@@ -153,10 +153,10 @@
         MODIFY {
             label = "MODIFY";
             bindings = <
-&kp LC(Q)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7     &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0      &trans
-&trans     &kp LC(A)     &kp LC(S)     &kp LC(D)     &kp LC(F)     &trans        &trans        &kp RIGHT_SHIFT  &trans        &trans        &trans            &trans
-&trans     &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &trans        &kp F1        &kp F2           &kp F3        &kp F4        &kp LC(QUESTION)  &trans
-&trans     &trans        &trans        &trans        &trans                      &trans        &mo 3                                                          &trans
+&kp LC(Q)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7     &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &trans
+&trans     &kp LC(A)     &kp LC(S)     &kp LC(D)     &kp LC(F)     &trans        &trans        &kp RIGHT_SHIFT  &trans        &trans        &trans         &trans
+&trans     &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &trans        &kp F1        &kp F2           &kp F3        &kp F4        &kp LC(SLASH)  &trans
+&trans     &trans        &trans        &trans        &trans                      &trans        &mo 3                                                       &trans
             >;
         };
 
