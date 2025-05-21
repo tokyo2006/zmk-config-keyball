@@ -170,7 +170,7 @@ layers:
   - F2
   - F3
   - F4
-  - Ctl+?
+  - {t: Ctl+/, s: 'Ctl+?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -374,7 +374,7 @@ combos:
 - p: [27, 28]
   k: '{'
 - p: [31, 32]
-  k: )
+  k: '}'
 - p: [5, 6]
   k: {t: \, s: '|'}
 - p: [17, 18]
