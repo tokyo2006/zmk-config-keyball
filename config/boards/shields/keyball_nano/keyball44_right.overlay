@@ -71,9 +71,22 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 28 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-	    automouse-layer = <0>;
-	    scroll-layers = <SCROLL>;
-	    snipe-layers = <SNIPE>;
+    };
+};
+
+/ {
+    trackball_listener {
+        status = "okay";
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+        input-processors = <&mouse_runtime_input_processor>;
+
+        scroller {
+            layers = <SCROLL>;
+            input-processors = 
+                <&zip_xy_to_scroll_mapper &scroll_runtime_input_processor>,
+                <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
+        };
         arrows {
             layers = <SYMBOL>;
             bindings =
@@ -86,7 +99,6 @@
             wait-ms = <5>;
             tap-ms = <5>;
         };
-
         volume {
             layers = <MODIFY>;
             bindings =
@@ -98,11 +110,4 @@
             tap-ms = <5>;
         };
     };
-};
-
-/ {
-  trackball_listener {
-    compatible = "zmk,input-listener";
-    device = <&trackball>;
-  };
 };
