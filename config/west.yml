@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: cormoran
       url-base: https://github.com/cormoran
+    - name: tokyo2006
+      url-base: https://github.com/tokyo2006
   projects:
     - name: zmk
       remote: cormoran
@@ -64,6 +66,10 @@ manifest:
     - name: zmk-driver-pmw3610-with-custom-studio-rpc
       remote: cormoran
       revision: main
+
+    - name: zmk-nice-oled
+      remote: tokyo2006
+      revision: lvgl9-fix
 
   self:
     path: config
