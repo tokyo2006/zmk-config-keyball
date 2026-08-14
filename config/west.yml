@@ -4,8 +4,6 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: cormoran
       url-base: https://github.com/cormoran
-    - name: tokyo2006
-      url-base: https://github.com/tokyo2006
   projects:
     - name: zmk
       remote: cormoran
@@ -67,9 +65,5 @@ manifest:
       remote: cormoran
       revision: main
 
-    # nice!oled status screen (LVGL 9 / Zephyr 4.1 port + lv_canvas_draw_* shims)
-    - name: zmk-nice-oled
-      remote: tokyo2006
-      revision: lvgl9-fix
   self:
     path: config
