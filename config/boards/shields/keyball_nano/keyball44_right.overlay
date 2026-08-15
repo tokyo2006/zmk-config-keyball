@@ -67,13 +67,14 @@
 
     trackball: trackball@0 {
         status = "okay";
-        compatible = "pixart,pmw3610";
+        compatible = "cormoran,pmw3610";
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 28 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
+        disable-burst-read;
     };
 };
 
@@ -86,9 +87,7 @@
 
         scroller {
             layers = <SCROLL>;
-            input-processors = 
-                <&zip_xy_to_scroll_mapper &scroll_runtime_input_processor>,
-                <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
+            input-processors = <&zip_xy_to_scroll_mapper &scroll_runtime_input_processor>;
         };
     };
 };
